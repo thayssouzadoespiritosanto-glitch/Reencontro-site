@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Reencontro — um convite para olhar para dentro. Experiências para mulheres que desejam se reconectar com sua história, sua essência e as pessoas com quem compartilham a caminhada.">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Reencontro — um convite para olhar para dentro. Experiências para mulheres que desejam se reconectar com sua história, sua essência e as pessoas com quem compartilham a caminhada."
+  >
 
   <title>Reencontro | Um convite para olhar para dentro</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
 
@@ -28,15 +45,18 @@
       --cinza: #746A64;
     }
 
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
+
 
     body {
       background: var(--off-white);
@@ -47,24 +67,29 @@
       overflow-x: hidden;
     }
 
+
     img {
       width: 100%;
       display: block;
     }
+
 
     a {
       color: inherit;
       text-decoration: none;
     }
 
+
     .serif {
       font-family: "Cormorant Garamond", serif;
     }
+
 
     .container {
       width: min(1180px, 88%);
       margin: 0 auto;
     }
+
 
     .eyebrow {
       color: var(--vinho);
@@ -75,6 +100,7 @@
       margin-bottom: 24px;
     }
 
+
     .section-title {
       font-family: "Cormorant Garamond", serif;
       font-weight: 400;
@@ -83,11 +109,13 @@
       color: var(--vinho-escuro);
     }
 
+
     .reveal {
       opacity: 0;
       transform: translateY(35px);
       transition: opacity 1s ease, transform 1s ease;
     }
+
 
     .reveal.visible {
       opacity: 1;
@@ -117,6 +145,7 @@
       color: var(--branco);
     }
 
+
     nav.scrolled {
       background: rgba(247, 243, 237, .96);
       color: var(--vinho-escuro);
@@ -125,12 +154,14 @@
       backdrop-filter: blur(10px);
     }
 
+
     .logo {
       font-family: "Cormorant Garamond", serif;
       letter-spacing: 5px;
       font-size: 22px;
       font-weight: 500;
     }
+
 
     .nav-links {
       display: flex;
@@ -140,9 +171,11 @@
       text-transform: uppercase;
     }
 
+
     .nav-links a {
       transition: opacity .3s;
     }
+
 
     .nav-links a:hover {
       opacity: .55;
@@ -178,6 +211,7 @@
       overflow: hidden;
     }
 
+
     .hero::after {
       content: "";
       position: absolute;
@@ -191,12 +225,14 @@
       );
     }
 
+
     .hero-content {
       position: relative;
       z-index: 2;
       width: 100%;
       padding: 30px 5%;
     }
+
 
     .hero h1 {
       font-family: "Cormorant Garamond", serif;
@@ -213,12 +249,14 @@
       text-shadow: 0 4px 30px rgba(0, 0, 0, .25);
     }
 
+
     .hero p {
       font-family: "Cormorant Garamond", serif;
       font-style: italic;
       font-size: clamp(22px, 3vw, 35px);
       margin-top: 28px;
     }
+
 
     .scroll-indicator {
       position: absolute;
@@ -233,7 +271,9 @@
       animation: bounce 2s infinite;
     }
 
+
     @keyframes bounce {
+
       0%, 100% {
         transform: translate(-50%, 0);
       }
@@ -241,6 +281,7 @@
       50% {
         transform: translate(-50%, 10px);
       }
+
     }
 
 
@@ -252,12 +293,14 @@
       padding: 150px 0;
     }
 
+
     .intro-grid {
       display: grid;
       grid-template-columns: .8fr 1.2fr;
       gap: 12%;
       align-items: start;
     }
+
 
     .intro-number {
       font-family: "Cormorant Garamond", serif;
@@ -267,11 +310,13 @@
       opacity: .5;
     }
 
+
     .intro-text p {
       margin-top: 30px;
       max-width: 650px;
       font-size: 16px;
     }
+
 
     .intro-emphasis {
       font-family: "Cormorant Garamond", serif;
@@ -290,6 +335,7 @@
       padding: 40px 0 150px;
     }
 
+
     .presentation-grid {
       display: grid;
       grid-template-columns: .85fr 1.15fr;
@@ -297,10 +343,12 @@
       align-items: center;
     }
 
+
     .presentation-copy p {
       margin: 25px 0 35px;
       max-width: 540px;
     }
+
 
     .video-frame {
       width: 100%;
@@ -317,6 +365,7 @@
 
       background: var(--vinho);
     }
+
 
     .video-frame iframe {
       width: 100%;
@@ -338,6 +387,7 @@
       overflow: hidden;
     }
 
+
     .manifesto::before {
       content: "REENCONTRO";
 
@@ -354,15 +404,18 @@
       left: -2%;
     }
 
+
     .manifesto-inner {
       max-width: 900px;
       margin: auto;
       position: relative;
     }
 
+
     .manifesto .eyebrow {
       color: var(--ouro);
     }
+
 
     .manifesto h2 {
       font-family: "Cormorant Garamond", serif;
@@ -371,10 +424,12 @@
       line-height: 1.12;
     }
 
+
     .manifesto h2 em {
       color: #D3B98F;
       font-weight: 400;
     }
+
 
     .manifesto-text {
       display: grid;
@@ -386,6 +441,7 @@
       color: rgba(255, 255, 255, .75);
       font-size: 15px;
     }
+
 
     .manifesto-quote {
       border-left: 1px solid var(--ouro);
@@ -409,52 +465,36 @@
       padding: 150px 0;
     }
 
+
     .chapters-header {
       max-width: 700px;
       margin-bottom: 100px;
     }
 
+
+    /*
+      As edições não dependem mais de imagens externas.
+      O conteúdo ocupa todo o espaço e o vídeo fica como
+      principal chamada da experiência.
+    */
+
     .chapter {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
 
-      min-height: 600px;
+      min-height: 0;
 
-      margin-bottom: 120px;
+      margin-bottom: 130px;
 
       align-items: center;
     }
 
-    .chapter:nth-child(even) .chapter-image {
-      order: 2;
-    }
-
-    .chapter:nth-child(even) .chapter-copy {
-      order: 1;
-      padding-left: 0;
-      padding-right: 12%;
-    }
-
-    .chapter-image {
-      height: 650px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .chapter-image img {
-      height: 100%;
-      object-fit: cover;
-
-      transition: transform 1.5s ease;
-    }
-
-    .chapter:hover .chapter-image img {
-      transform: scale(1.035);
-    }
 
     .chapter-copy {
-      padding-left: 12%;
+      max-width: 760px;
+      padding: 0;
     }
+
 
     .chapter-number {
       color: var(--ouro);
@@ -462,6 +502,7 @@
       font-size: 11px;
       text-transform: uppercase;
     }
+
 
     .chapter-copy h3 {
       font-family: "Cormorant Garamond", serif;
@@ -475,10 +516,12 @@
       margin: 18px 0 28px;
     }
 
+
     .chapter-copy p {
-      max-width: 480px;
+      max-width: 620px;
       margin-bottom: 28px;
     }
+
 
     .watch-link {
       display: inline-flex;
@@ -496,10 +539,53 @@
       border-bottom: 1px solid var(--ouro);
 
       padding-bottom: 6px;
+
+      transition: .3s ease;
     }
+
+
+    .watch-link:hover {
+      opacity: .65;
+    }
+
 
     .watch-link span {
       font-size: 16px;
+    }
+
+
+    .online-note {
+      margin-top: 35px;
+      padding: 30px 35px;
+
+      border-left: 1px solid var(--ouro);
+
+      background: rgba(217, 203, 190, .18);
+
+      max-width: 680px;
+    }
+
+
+    .online-note strong {
+      display: block;
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 29px;
+
+      font-weight: 500;
+
+      color: var(--vinho-escuro);
+
+      margin-bottom: 8px;
+    }
+
+
+    .online-note span {
+      color: var(--vinho);
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
 
@@ -517,6 +603,7 @@
       overflow: hidden;
     }
 
+
     .next-edition::before {
       content: "06";
 
@@ -533,9 +620,10 @@
       color: rgba(255, 255, 255, .025);
     }
 
+
     .next-edition-inner {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: .85fr 1.15fr;
 
       gap: 10%;
 
@@ -545,9 +633,11 @@
       z-index: 2;
     }
 
+
     .next-edition .eyebrow {
       color: #D5BB8E;
     }
+
 
     .next-edition h2 {
       font-family: "Cormorant Garamond", serif;
@@ -559,6 +649,7 @@
 
       margin-bottom: 30px;
     }
+
 
     .next-edition h2 span {
       display: block;
@@ -578,6 +669,7 @@
       color: #D5BB8E;
     }
 
+
     .edition-details {
       display: grid;
 
@@ -591,19 +683,23 @@
       padding: 25px 0;
     }
 
+
     .detail {
       padding: 0 20px;
 
       border-right: 1px solid rgba(255, 255, 255, .12);
     }
 
+
     .detail:first-child {
       padding-left: 0;
     }
 
+
     .detail:last-child {
       border-right: 0;
     }
+
 
     .detail strong {
       display: block;
@@ -616,6 +712,7 @@
 
       color: var(--branco);
     }
+
 
     .detail small {
       display: block;
@@ -631,6 +728,7 @@
       letter-spacing: 1.5px;
     }
 
+
     .edition-description {
       max-width: 600px;
 
@@ -640,6 +738,33 @@
 
       margin-bottom: 35px;
     }
+
+
+    .edition-video {
+      width: 100%;
+
+      max-width: 390px;
+
+      margin-left: auto;
+
+      aspect-ratio: 9 / 16;
+
+      border-radius: 190px 190px 16px 16px;
+
+      overflow: hidden;
+
+      box-shadow: 0 35px 80px rgba(0, 0, 0, .25);
+
+      background: #250b12;
+    }
+
+
+    .edition-video iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
 
     .price-box {
       display: flex;
@@ -653,6 +778,7 @@
       margin-top: 25px;
     }
 
+
     .price {
       font-family: "Cormorant Garamond", serif;
 
@@ -660,6 +786,7 @@
 
       color: #D5BB8E;
     }
+
 
     .price span {
       font-family: "Montserrat", sans-serif;
@@ -672,6 +799,7 @@
 
       letter-spacing: 1px;
     }
+
 
     .cta {
       display: inline-flex;
@@ -700,10 +828,12 @@
       cursor: pointer;
     }
 
+
     .cta:hover {
       background: #D5BB8E;
       transform: translateY(-2px);
     }
+
 
     .cta-outline {
       background: transparent;
@@ -713,10 +843,12 @@
       color: var(--branco);
     }
 
+
     .cta-outline:hover {
       background: var(--branco);
       color: var(--vinho-escuro);
     }
+
 
     .sales-options {
       display: flex;
@@ -736,6 +868,7 @@
       padding: 140px 0;
     }
 
+
     .stories-title {
       text-align: center;
 
@@ -743,6 +876,7 @@
 
       margin: 0 auto 70px;
     }
+
 
     .video-cards {
       display: grid;
@@ -752,6 +886,7 @@
       gap: 25px;
     }
 
+
     .video-card {
       background: var(--branco);
 
@@ -759,6 +894,7 @@
 
       box-shadow: 0 15px 40px rgba(70, 40, 30, .06);
     }
+
 
     .video-card-inner {
       aspect-ratio: 9 / 16;
@@ -768,11 +904,13 @@
       background: var(--vinho-escuro);
     }
 
+
     .video-card iframe {
       width: 100%;
       height: 100%;
       border: 0;
     }
+
 
     .video-card h4 {
       font-family: "Cormorant Garamond", serif;
@@ -785,6 +923,7 @@
 
       padding: 20px 12px 5px;
     }
+
 
     .video-card p {
       font-size: 12px;
@@ -803,6 +942,7 @@
       padding: 150px 0;
     }
 
+
     .testimonials-title {
       text-align: center;
 
@@ -810,6 +950,7 @@
 
       margin: 0 auto 80px;
     }
+
 
     .testimonials-grid {
       display: grid;
@@ -821,6 +962,7 @@
       align-items: stretch;
     }
 
+
     .testimonial {
       padding: 45px 35px;
 
@@ -829,6 +971,7 @@
       position: relative;
     }
 
+
     .testimonial:nth-child(2) {
       background: var(--vinho);
 
@@ -836,6 +979,7 @@
 
       transform: translateY(30px);
     }
+
 
     .quote-mark {
       font-family: "Cormorant Garamond", serif;
@@ -847,6 +991,7 @@
       height: 55px;
     }
 
+
     .testimonial blockquote {
       font-family: "Cormorant Garamond", serif;
 
@@ -854,6 +999,7 @@
 
       line-height: 1.45;
     }
+
 
     .testimonial small {
       display: block;
@@ -899,19 +1045,23 @@
       color: var(--branco);
     }
 
+
     .essencia-content {
       width: min(1180px, 88%);
 
       margin: auto;
     }
 
+
     .essencia-copy {
       max-width: 650px;
     }
 
+
     .essencia .eyebrow {
       color: #D5BB8E;
     }
+
 
     .essencia h2 {
       font-family: "Cormorant Garamond", serif;
@@ -922,6 +1072,7 @@
 
       font-weight: 400;
     }
+
 
     .essencia-subtitle {
       font-family: "Cormorant Garamond", serif;
@@ -935,6 +1086,7 @@
       color: #E7D6BE;
     }
 
+
     .essencia p {
       max-width: 560px;
 
@@ -942,6 +1094,7 @@
 
       margin-bottom: 25px;
     }
+
 
     .completed-label {
       display: inline-block;
@@ -961,26 +1114,36 @@
       margin-bottom: 22px;
     }
 
-    .essencia-video {
-      width: 100%;
-      max-width: 330px;
-      margin-top: 35px;
 
-      aspect-ratio: 9 / 16;
+    .essencia-video-link {
+      display: inline-flex;
 
-      overflow: hidden;
+      align-items: center;
 
-      border-radius: 170px 170px 16px 16px;
+      gap: 12px;
 
-      box-shadow: 0 30px 70px rgba(0, 0, 0, .28);
+      margin-top: 5px;
 
-      background: #250b12;
+      color: #D5BB8E;
+
+      font-size: 11px;
+
+      font-weight: 600;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+
+      border-bottom: 1px solid #D5BB8E;
+
+      padding-bottom: 7px;
+
+      transition: .3s ease;
     }
 
-    .essencia-video iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
+
+    .essencia-video-link:hover {
+      opacity: .7;
     }
 
 
@@ -994,11 +1157,13 @@
       text-align: center;
     }
 
+
     .final-inner {
       max-width: 800px;
 
       margin: auto;
     }
+
 
     .final h2 {
       font-family: "Cormorant Garamond", serif;
@@ -1012,11 +1177,13 @@
       line-height: 1.05;
     }
 
+
     .final p {
       max-width: 550px;
 
       margin: 35px auto;
     }
+
 
     .final-line {
       width: 1px;
@@ -1043,6 +1210,7 @@
       text-align: center;
     }
 
+
     .footer-logo {
       font-family: "Cormorant Garamond", serif;
 
@@ -1050,6 +1218,7 @@
 
       font-size: 32px;
     }
+
 
     footer p {
       font-family: "Cormorant Garamond", serif;
@@ -1060,8 +1229,9 @@
 
       margin-top: 8px;
 
-      color: #D5BB8F;
+      color: #D5BB8E;
     }
+
 
     .footer-bottom {
       border-top: 1px solid rgba(255, 255, 255, .12);
@@ -1092,17 +1262,21 @@
         padding: 20px 5%;
       }
 
+
       nav.scrolled {
         padding: 15px 5%;
       }
+
 
       .nav-links {
         display: none;
       }
 
+
       .logo {
         font-size: 18px;
       }
+
 
       .hero {
         height: 100svh;
@@ -1111,97 +1285,109 @@
         background-position: center;
       }
 
+
       .hero-content {
         padding: 25px 4%;
       }
+
 
       .hero h1 {
         font-size: clamp(38px, 10.5vw, 72px);
         letter-spacing: 2px;
       }
 
+
       .hero p {
         font-size: 23px;
         margin-top: 22px;
       }
 
+
       .intro {
         padding: 100px 0;
       }
+
 
       .intro-grid {
         grid-template-columns: 1fr;
         gap: 40px;
       }
 
+
       .intro-number {
         font-size: 70px;
       }
 
+
       .presentation {
         padding-bottom: 100px;
       }
+
 
       .presentation-grid {
         grid-template-columns: 1fr;
         gap: 55px;
       }
 
+
       .video-frame {
         margin: auto;
         max-width: 330px;
       }
 
+
       .manifesto {
         padding: 100px 0;
       }
+
 
       .manifesto-text {
         grid-template-columns: 1fr;
         gap: 45px;
       }
 
+
       .chapters {
         padding: 100px 0;
       }
+
 
       .chapters-header {
         margin-bottom: 60px;
       }
 
+
       .chapter {
-        grid-template-columns: 1fr;
         margin-bottom: 90px;
-        min-height: 0;
       }
 
-      .chapter:nth-child(even) .chapter-image,
-      .chapter:nth-child(even) .chapter-copy {
-        order: initial;
+
+      .chapter-copy {
+        padding: 0;
       }
 
-      .chapter-image {
-        height: 480px;
+
+      .online-note {
+        padding: 25px;
       }
 
-      .chapter-copy,
-      .chapter:nth-child(even) .chapter-copy {
-        padding: 40px 5px 0;
-      }
 
       .next-edition {
         padding: 100px 0;
       }
+
 
       .next-edition-inner {
         grid-template-columns: 1fr;
         gap: 55px;
       }
 
+
       .edition-details {
         grid-template-columns: 1fr;
         gap: 18px;
       }
+
 
       .detail {
         padding: 0 0 18px;
@@ -1211,19 +1397,29 @@
         border-bottom: 1px solid rgba(255, 255, 255, .12);
       }
 
+
       .detail:last-child {
         border-bottom: 0;
         padding-bottom: 0;
       }
+
+
+      .edition-video {
+        margin: auto;
+        max-width: 330px;
+      }
+
 
       .sales-options {
         flex-direction: column;
         align-items: stretch;
       }
 
+
       .sales-options .cta {
         width: 100%;
       }
+
 
       .video-cards {
         grid-template-columns: 1fr;
@@ -1233,20 +1429,24 @@
         margin: auto;
       }
 
+
       .testimonials {
         padding: 100px 0;
       }
+
 
       .testimonials-grid {
         grid-template-columns: 1fr;
       }
 
+
       .testimonial:nth-child(2) {
         transform: none;
       }
 
+
       .essencia {
-        min-height: 1100px;
+        min-height: 850px;
 
         align-items: flex-end;
 
@@ -1255,31 +1455,30 @@
         background:
           linear-gradient(
             to top,
-            rgba(53, 14, 24, .99) 0%,
-            rgba(53, 14, 24, .92) 48%,
-            rgba(53, 14, 24, .18) 100%
+            rgba(53, 14, 24, .98) 0%,
+            rgba(53, 14, 24, .78) 45%,
+            rgba(53, 14, 24, .15) 100%
           ),
           url("thays-essencia.jpeg");
 
         background-position: center top;
       }
 
+
       .essencia-content {
         width: 90%;
       }
 
-      .essencia-video {
-        max-width: 300px;
-        margin: 35px auto 0;
-      }
 
       .final {
         padding: 100px 0;
       }
 
+
       .cta {
         width: 100%;
       }
+
     }
 
 
@@ -1290,16 +1489,20 @@
         letter-spacing: 1px;
       }
 
+
       .hero p {
         font-size: 20px;
       }
 
+
       .container {
         width: 90%;
       }
+
     }
 
   </style>
+
 </head>
 
 
@@ -1316,23 +1519,28 @@
       REENCONTRO
     </a>
 
+
     <div class="nav-links">
 
       <a href="#projeto">
         O projeto
       </a>
 
+
       <a href="#manifesto">
         Manifesto
       </a>
+
 
       <a href="#edicoes">
         Edições
       </a>
 
+
       <a href="#historias">
         Histórias
       </a>
+
 
       <a href="#entre-amigas">
         Entre Amigas
@@ -1356,11 +1564,13 @@
         REENCONTRO
       </h1>
 
+
       <p>
         Um convite para olhar para dentro.
       </p>
 
     </div>
+
 
     <a
       href="#projeto"
@@ -1388,6 +1598,7 @@
           01
         </div>
 
+
         <p class="eyebrow">
           O projeto
         </p>
@@ -1401,11 +1612,13 @@
           Em um mundo que nos ensina a olhar para fora, existe um convite para voltar.
         </h2>
 
+
         <p>
           Vivemos cercadas por informações, comparações e expectativas.
           E, enquanto tentamos responder ao que esperam de nós,
           muitas vezes nos afastamos de quem realmente somos.
         </p>
+
 
         <p>
           O Reencontro nasce como uma experiência de olhar para dentro.
@@ -1413,6 +1626,7 @@
           considerar aquilo que nos atravessou e abrir espaço para uma
           vida vivida com mais consciência, verdade e propósito.
         </p>
+
 
         <div class="intro-emphasis">
           Talvez o caminho não seja se tornar alguém diferente.
@@ -1441,9 +1655,11 @@
           Por dentro do Reencontro
         </p>
 
+
         <h2 class="section-title">
           Mais do que entender. É preciso viver.
         </h2>
+
 
         <p>
           Cada edição nasce de um tema diferente, mas todas carregam
@@ -1485,6 +1701,7 @@
         Manifesto
       </p>
 
+
       <h2>
         Olhar para dentro exige coragem.
         Mas é lá que encontramos aquilo que
@@ -1503,7 +1720,9 @@
             de outras pessoas.
           </p>
 
+
           <br>
+
 
           <p>
             O Reencontro é um espaço onde a vulnerabilidade não é
@@ -1545,10 +1764,12 @@
           Uma jornada
         </p>
 
+
         <h2 class="section-title">
           Cada edição,<br>
           um novo capítulo.
         </h2>
+
 
         <p style="margin-top:25px;">
           Os temas mudam. As experiências também.
@@ -1560,20 +1781,11 @@
 
 
 
-      <!-- VOLTA AO EIXO -->
+      <!-- =====================================================
+           VOLTA AO EIXO
+      ====================================================== -->
 
       <article class="chapter reveal">
-
-        <div class="chapter-image">
-
-          <img
-            src="volta-ao-eixo-grupo.jpeg"
-            alt="Participantes do Reencontro Volta ao Eixo"
-            loading="lazy"
-          >
-
-        </div>
-
 
         <div class="chapter-copy">
 
@@ -1581,16 +1793,19 @@
             Capítulo 02
           </span>
 
+
           <h3>
             Volta<br>
             ao Eixo
           </h3>
+
 
           <p>
             Um convite para perceber onde você está,
             considerar o que tirou você do seu centro
             e reencontrar uma direção.
           </p>
+
 
           <a
             class="watch-link"
@@ -1608,20 +1823,11 @@
 
 
 
-      <!-- RAÍZES -->
+      <!-- =====================================================
+           RAÍZES
+      ====================================================== -->
 
       <article class="chapter reveal">
-
-        <div class="chapter-image">
-
-          <img
-            src="volta-ao-eixo-experiencia.jpeg"
-            alt="Experiência durante o Reencontro Raízes"
-            loading="lazy"
-          >
-
-        </div>
-
 
         <div class="chapter-copy">
 
@@ -1629,9 +1835,11 @@
             Capítulo 03
           </span>
 
+
           <h3>
             Raízes
           </h3>
+
 
           <p>
             Para florescer, também é preciso olhar para aquilo
@@ -1639,6 +1847,7 @@
             histórias, origens e experiências que ajudaram a construir
             quem somos hoje.
           </p>
+
 
           <a
             class="watch-link"
@@ -1656,20 +1865,11 @@
 
 
 
-      <!-- RAÍZES ONLINE -->
+      <!-- =====================================================
+           RAÍZES ON-LINE
+      ====================================================== -->
 
       <article class="chapter reveal">
-
-        <div class="chapter-image">
-
-          <img
-            src="raízes-online.jpeg"
-            alt="Edição online do Reencontro"
-            loading="lazy"
-          >
-
-        </div>
-
 
         <div class="chapter-copy">
 
@@ -1677,16 +1877,31 @@
             Capítulo 04
           </span>
 
+
           <h3>
             Raízes<br>
             On-line
           </h3>
+
 
           <p>
             A distância mudou o espaço, mas não impediu o encontro.
             Uma nova forma de viver a experiência e permitir que
             outras mulheres também pudessem fazer esse caminho.
           </p>
+
+
+          <div class="online-note">
+
+            <strong>
+              Já tivemos duas edições do Reencontro On-line.
+            </strong>
+
+            <span>
+              O encontro também pode acontecer à distância.
+            </span>
+
+          </div>
 
         </div>
 
@@ -1712,22 +1927,27 @@
           5ª edição · realizada
         </span>
 
+
         <p class="eyebrow">
           Reencontro Essência
         </p>
+
 
         <h2>
           Essência
         </h2>
 
+
         <div class="essencia-subtitle">
           Quem é você quando não precisa responder às expectativas de ninguém?
         </div>
+
 
         <p>
           Em um mundo de tantas informações, opiniões e referências,
           é fácil se perder tentando ser tudo aquilo que esperam de nós.
         </p>
+
 
         <p>
           O Reencontro Essência aconteceu em
@@ -1738,19 +1958,15 @@
         </p>
 
 
-        <!-- VÍDEO CORRETO DA ESSÊNCIA -->
-
-        <div class="essencia-video reveal">
-
-          <iframe
-            src="https://www.youtube.com/embed/Hc9vt65y6sI"
-            title="Reencontro Essência — 5ª edição"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-
-        </div>
+        <a
+          class="essencia-video-link"
+          href="https://youtube.com/shorts/Hc9vt65y6sI?is=GWDXVk6_6AP66vLY"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>▶</span>
+          Assista ao Reencontro Essência
+        </a>
 
       </div>
 
@@ -1777,6 +1993,7 @@
           6ª edição · Reencontro
         </p>
 
+
         <h2>
           Entre
           Amigas
@@ -1792,11 +2009,13 @@
           de ter pessoas com quem dividir a caminhada.
         </p>
 
+
         <p class="edition-description">
           Essa edição nasceu para isso: um dia para criar conexões,
           trocar experiências, conversar profundamente e lembrar
           que você não precisa viver tudo sozinha.
         </p>
+
 
         <p class="edition-description">
           E se hoje você sente que não tem amigas assim, tudo bem.
@@ -1815,6 +2034,7 @@
               31/10
             </strong>
 
+
             <small>
               Sábado
             </small>
@@ -1828,6 +2048,7 @@
               9h — 16h
             </strong>
 
+
             <small>
               Um dia inteiro de experiência
             </small>
@@ -1840,6 +2061,7 @@
             <strong>
               Niterói — RJ
             </strong>
+
 
             <small>
               Experiência presencial
@@ -1882,10 +2104,28 @@
         </div>
 
 
-        <p style="margin-top:18px; font-size:12px; color:rgba(255,255,255,.62);">
+        <p
+          style="margin-top:18px; font-size:12px; color:rgba(255,255,255,.62);"
+        >
           Dupla: R$ 297 + R$ 197 para a amiga.
           R$ 100 de desconto no segundo ingresso.
         </p>
+
+      </div>
+
+
+
+      <!-- VÍDEO DA 6ª EDIÇÃO -->
+
+      <div class="edition-video reveal">
+
+        <iframe
+          src="https://www.youtube.com/embed/Hc9vt65y6sI"
+          title="Reencontro Entre Amigas — 6ª edição"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
 
       </div>
 
@@ -1909,6 +2149,7 @@
           Histórias reais
         </p>
 
+
         <h2 class="section-title">
           O que permanece depois que o encontro termina.
         </h2>
@@ -1919,7 +2160,7 @@
       <div class="video-cards">
 
 
-        <!-- VÍDEO 1 — MANTIDO -->
+        <!-- VÍDEO 1 -->
 
         <article class="video-card reveal">
 
@@ -1935,9 +2176,11 @@
 
           </div>
 
+
           <h4>
             Depois de Raízes
           </h4>
+
 
           <p>
             O que uma experiência pode despertar quando nos permitimos olhar para dentro.
@@ -1947,7 +2190,7 @@
 
 
 
-        <!-- VÍDEO 2 — MANTIDO -->
+        <!-- VÍDEO 2 -->
 
         <article class="video-card reveal">
 
@@ -1963,9 +2206,11 @@
 
           </div>
 
+
           <h4>
             Depois de Volta ao Eixo
           </h4>
+
 
           <p>
             Vozes de mulheres que aceitaram o convite para se reencontrar.
@@ -1975,7 +2220,7 @@
 
 
 
-        <!-- VÍDEO 3 — MANTIDO -->
+        <!-- VÍDEO 3 -->
 
         <article class="video-card reveal">
 
@@ -1991,9 +2236,11 @@
 
           </div>
 
+
           <h4>
             Por dentro da experiência
           </h4>
+
 
           <p>
             Alguns momentos não podem ser explicados. Precisam ser vividos.
@@ -2023,6 +2270,7 @@
           Palavras de quem esteve lá
         </p>
 
+
         <h2 class="section-title">
           Cada mulher chega com uma história.
           E sai fazendo novas perguntas.
@@ -2040,6 +2288,7 @@
             “
           </div>
 
+
           <blockquote>
             O Reencontro foi, sem dúvidas, uma oportunidade para
             me reencontrar comigo mesma. De olhar para dentro e
@@ -2047,6 +2296,7 @@
             conseguia enxergar.
           </blockquote>
 
+
           <small>
             Participante do Reencontro
           </small>
@@ -2060,6 +2310,7 @@
           <div class="quote-mark">
             “
           </div>
+
 
           <blockquote>
             Foi uma manhã profundamente transformadora. Um espaço de
@@ -2067,6 +2318,7 @@
             própria história de uma forma diferente.
           </blockquote>
 
+
           <small>
             Participante do Reencontro
           </small>
@@ -2081,11 +2333,13 @@
             “
           </div>
 
+
           <blockquote>
             Estou vivendo uma fase de redescoberta. Por muito tempo
             vivi em função de todos ao meu redor e percebi que também
             preciso cuidar de mim, me ouvir e descobrir quem eu sou.
           </blockquote>
+
 
           <small>
             Participante do Reencontro
@@ -2113,12 +2367,15 @@
         O que permanece
       </p>
 
+
       <h2>
         Talvez você não precise ir mais longe.
         Talvez precise ir mais fundo.
       </h2>
 
+
       <div class="final-line"></div>
+
 
       <p>
         O Reencontro não termina quando a experiência acaba.
@@ -2152,9 +2409,11 @@
       REENCONTRO
     </div>
 
+
     <p>
       Um convite para olhar para dentro.
     </p>
+
 
     <div class="footer-bottom">
       Reencontro · Todos os direitos reservados
@@ -2170,42 +2429,61 @@
 
   <script>
 
+    /* =======================================================
+       NAVEGAÇÃO AO ROLAR
+    ======================================================== */
+
     const navigation = document.getElementById("navigation");
+
 
     window.addEventListener("scroll", () => {
 
       if (window.scrollY > 80) {
+
         navigation.classList.add("scrolled");
+
       } else {
+
         navigation.classList.remove("scrolled");
+
       }
 
     });
 
 
 
-    const revealElements = document.querySelectorAll(".reveal");
+    /* =======================================================
+       ANIMAÇÕES AO APARECER
+    ======================================================== */
 
-    const observer = new IntersectionObserver(
-      (entries) => {
+    const revealElements =
+      document.querySelectorAll(".reveal");
 
-        entries.forEach((entry) => {
 
-          if (entry.isIntersecting) {
+    const observer =
+      new IntersectionObserver(
 
-            entry.target.classList.add("visible");
+        (entries) => {
 
-            observer.unobserve(entry.target);
+          entries.forEach((entry) => {
 
-          }
+            if (entry.isIntersecting) {
 
-        });
+              entry.target.classList.add("visible");
 
-      },
-      {
-        threshold: 0.12
-      }
-    );
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+
+        {
+          threshold: 0.12
+        }
+
+      );
 
 
     revealElements.forEach((element) => {
@@ -2216,14 +2494,24 @@
 
 
 
-    document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+    /* =======================================================
+       LINKS EXTERNOS
+    ======================================================== */
 
-      link.setAttribute("rel", "noopener noreferrer");
+    document
+      .querySelectorAll('a[target="_blank"]')
+      .forEach((link) => {
 
-    });
+        link.setAttribute(
+          "rel",
+          "noopener noreferrer"
+        );
+
+      });
 
   </script>
 
 
 </body>
+
 </html>
