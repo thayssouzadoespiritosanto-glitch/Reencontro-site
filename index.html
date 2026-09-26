@@ -198,13 +198,6 @@
       padding: 30px 5%;
     }
 
-    /*
-      IMPORTANTE:
-      A palavra REENCONTRO não usa mais um tamanho que possa
-      ultrapassar a tela. Isso corrige o corte que acontecia
-      anteriormente, principalmente no celular.
-    */
-
     .hero h1 {
       font-family: "Cormorant Garamond", serif;
       font-size: clamp(42px, 11vw, 132px);
@@ -542,7 +535,7 @@
 
     .next-edition-inner {
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
+      grid-template-columns: 1fr;
 
       gap: 10%;
 
@@ -646,30 +639,6 @@
       font-size: 15px;
 
       margin-bottom: 35px;
-    }
-
-    .edition-video {
-      width: 100%;
-
-      max-width: 390px;
-
-      margin-left: auto;
-
-      aspect-ratio: 9 / 16;
-
-      border-radius: 190px 190px 16px 16px;
-
-      overflow: hidden;
-
-      box-shadow: 0 35px 80px rgba(0, 0, 0, .25);
-
-      background: #250b12;
-    }
-
-    .edition-video iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
     }
 
     .price-box {
@@ -992,6 +961,28 @@
       margin-bottom: 22px;
     }
 
+    .essencia-video {
+      width: 100%;
+      max-width: 330px;
+      margin-top: 35px;
+
+      aspect-ratio: 9 / 16;
+
+      overflow: hidden;
+
+      border-radius: 170px 170px 16px 16px;
+
+      box-shadow: 0 30px 70px rgba(0, 0, 0, .28);
+
+      background: #250b12;
+    }
+
+    .essencia-video iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
 
     /* =========================================================
        ENCERRAMENTO
@@ -1069,7 +1060,7 @@
 
       margin-top: 8px;
 
-      color: #D5BB8E;
+      color: #D5BB8F;
     }
 
     .footer-bottom {
@@ -1123,10 +1114,6 @@
       .hero-content {
         padding: 25px 4%;
       }
-
-      /*
-        Mantém REENCONTRO inteiro na tela.
-      */
 
       .hero h1 {
         font-size: clamp(38px, 10.5vw, 72px);
@@ -1229,11 +1216,6 @@
         padding-bottom: 0;
       }
 
-      .edition-video {
-        margin: auto;
-        max-width: 330px;
-      }
-
       .sales-options {
         flex-direction: column;
         align-items: stretch;
@@ -1264,7 +1246,7 @@
       }
 
       .essencia {
-        min-height: 850px;
+        min-height: 1100px;
 
         align-items: flex-end;
 
@@ -1273,9 +1255,9 @@
         background:
           linear-gradient(
             to top,
-            rgba(53, 14, 24, .98) 0%,
-            rgba(53, 14, 24, .78) 45%,
-            rgba(53, 14, 24, .15) 100%
+            rgba(53, 14, 24, .99) 0%,
+            rgba(53, 14, 24, .92) 48%,
+            rgba(53, 14, 24, .18) 100%
           ),
           url("thays-essencia.jpeg");
 
@@ -1284,6 +1266,11 @@
 
       .essencia-content {
         width: 90%;
+      }
+
+      .essencia-video {
+        max-width: 300px;
+        margin: 35px auto 0;
       }
 
       .final {
@@ -1607,7 +1594,7 @@
 
           <a
             class="watch-link"
-            href="https://youtube.com/shorts/UGR6QooLHXQ"
+            href="https://youtube.com/shorts/UGR6QooLHXQ?is=GUbg1J2W5yrOCbZB"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -1655,7 +1642,7 @@
 
           <a
             class="watch-link"
-            href="https://youtube.com/shorts/Sid_0y3MH-o"
+            href="https://youtu.be/Sid_0y3MH-o?is=jc9RPNEmoYmWkorE"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -1749,6 +1736,21 @@
           o excesso, silenciar o barulho de fora e abrir espaço
           para aquilo que sempre esteve aí.
         </p>
+
+
+        <!-- VÍDEO CORRETO DA ESSÊNCIA -->
+
+        <div class="essencia-video reveal">
+
+          <iframe
+            src="https://www.youtube.com/embed/Hc9vt65y6sI"
+            title="Reencontro Essência — 5ª edição"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+
+        </div>
 
       </div>
 
@@ -1887,22 +1889,6 @@
 
       </div>
 
-
-
-      <!-- VÍDEO -->
-
-      <div class="edition-video reveal">
-
-        <iframe
-          src="https://www.youtube.com/embed/Hc9vt65y6sI"
-          title="Reencontro Entre Amigas — 6ª edição"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-
-      </div>
-
     </div>
 
   </section>
@@ -1933,7 +1919,7 @@
       <div class="video-cards">
 
 
-        <!-- VÍDEO 1 -->
+        <!-- VÍDEO 1 — MANTIDO -->
 
         <article class="video-card reveal">
 
@@ -1961,7 +1947,7 @@
 
 
 
-        <!-- VÍDEO 2 -->
+        <!-- VÍDEO 2 — MANTIDO -->
 
         <article class="video-card reveal">
 
@@ -1989,7 +1975,7 @@
 
 
 
-        <!-- VÍDEO 3 -->
+        <!-- VÍDEO 3 — MANTIDO -->
 
         <article class="video-card reveal">
 
@@ -2184,10 +2170,6 @@
 
   <script>
 
-    /* =======================================================
-       NAVEGAÇÃO AO ROLAR
-    ======================================================== */
-
     const navigation = document.getElementById("navigation");
 
     window.addEventListener("scroll", () => {
@@ -2201,10 +2183,6 @@
     });
 
 
-
-    /* =======================================================
-       ANIMAÇÕES AO APARECER
-    ======================================================== */
 
     const revealElements = document.querySelectorAll(".reveal");
 
@@ -2237,10 +2215,6 @@
     });
 
 
-
-    /* =======================================================
-       FECHA LINKS EXTERNOS DE FORMA SEGURA
-    ======================================================== */
 
     document.querySelectorAll('a[target="_blank"]').forEach((link) => {
 
